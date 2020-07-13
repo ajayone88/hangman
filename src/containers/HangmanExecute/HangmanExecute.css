@@ -1,0 +1,43 @@
+.HangmanExecute{
+    background-color:darkblue;
+    padding:32px;
+    height:100%;
+}
+
+.HangmanExecute h1{
+    color:white;
+}
+
+
+.Main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Main h2{
+    color:white;
+    font-size:28px;
+    text-align: center;
+}
+
+.UpperSection{
+    width:30%;
+    margin:auto;
+}
+
+@media(max-width:768px){
+    .UpperSection{
+        width:100%;
+        margin:auto;
+    }
+}
+
+.AlphabetCards{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
