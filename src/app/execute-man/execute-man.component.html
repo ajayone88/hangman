@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Hangman</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-6">
+            <div class="categorie" [ngStyle]="{'background-color': categorie.color}">
+                <span>{{categorie.name}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2 mt-md-4">
+        <div class="col-sm-12 d-flex justify-content-center">
+            <div class="image-box">
+                <div class="hangman-image"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-sm-12">
+            <div class="answer-box">
+                <div *ngFor="let alpha of coveredAnswer"
+                 class="answer-alphabet">
+                    <h3>{{alpha}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 class="text-center" [innerHtml]="question"></h4> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="cards-box">
+                <div *ngFor="let alpha of cards"
+                 class="card-alphabet"
+                 [ngStyle]="{'background-color': categorie.color}">
+                    <h1>{{alpha}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
